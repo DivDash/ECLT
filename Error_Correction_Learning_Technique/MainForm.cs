@@ -3,6 +3,7 @@ using MaterialSkin.Controls;
 using System;
 using System.Diagnostics;
 using System.Drawing;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace Error_Correction_Learning_Technique
@@ -315,6 +316,10 @@ namespace Error_Correction_Learning_Technique
             ORErrors = new int[4];
             ORoutputY = new int[4];
             ORinputSample = new int[2];
+
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            FileVersionInfo fileVersionInfo = FileVersionInfo.GetVersionInfo(assembly.Location);
+            VersionLabel.Text = "Version " + fileVersionInfo.FileVersion;
         }
         private void ANDResetButton_Click(object sender, EventArgs e)
         {

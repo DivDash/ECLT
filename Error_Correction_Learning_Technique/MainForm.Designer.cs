@@ -157,6 +157,8 @@
             this.UseColor = new MaterialSkin.Controls.MaterialSwitch();
             this.ChangeColorButton = new MaterialSkin.Controls.MaterialButton();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
+            this.LinkLabel = new MaterialSkin.Controls.MaterialLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
@@ -164,8 +166,7 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
-            this.LinkLabel = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
+            this.VersionLabel = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.materialCard6.SuspendLayout();
@@ -1749,7 +1750,7 @@
             this.ThemeChangerButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.ThemeChangerButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.ThemeChangerButton.Name = "ThemeChangerButton";
-            this.ThemeChangerButton.Size = new System.Drawing.Size(130, 36);
+            this.ThemeChangerButton.Size = new System.Drawing.Size(133, 36);
             this.ThemeChangerButton.TabIndex = 38;
             this.ThemeChangerButton.Text = "Change Theme";
             this.ThemeChangerButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
@@ -1787,7 +1788,7 @@
             this.ChangeColorButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.ChangeColorButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.ChangeColorButton.Name = "ChangeColorButton";
-            this.ChangeColorButton.Size = new System.Drawing.Size(137, 36);
+            this.ChangeColorButton.Size = new System.Drawing.Size(140, 36);
             this.ChangeColorButton.TabIndex = 39;
             this.ChangeColorButton.Text = "Change Colors";
             this.ChangeColorButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -1798,6 +1799,7 @@
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.White;
+            this.tabPage5.Controls.Add(this.VersionLabel);
             this.tabPage5.Controls.Add(this.materialLabel12);
             this.tabPage5.Controls.Add(this.LinkLabel);
             this.tabPage5.Controls.Add(this.pictureBox2);
@@ -1811,6 +1813,35 @@
             this.tabPage5.Size = new System.Drawing.Size(1341, 610);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "ABOUT";
+            // 
+            // materialLabel12
+            // 
+            this.materialLabel12.AutoSize = true;
+            this.materialLabel12.Depth = 0;
+            this.materialLabel12.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel12.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel12.Location = new System.Drawing.Point(6, 563);
+            this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel12.Name = "materialLabel12";
+            this.materialLabel12.Size = new System.Drawing.Size(356, 24);
+            this.materialLabel12.TabIndex = 8;
+            this.materialLabel12.Text = "DEVELOPED BY : ZUJAJ MISBAH KHAN";
+            // 
+            // LinkLabel
+            // 
+            this.LinkLabel.AutoSize = true;
+            this.LinkLabel.Depth = 0;
+            this.LinkLabel.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.LinkLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.LinkLabel.Location = new System.Drawing.Point(1110, 498);
+            this.LinkLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LinkLabel.Name = "LinkLabel";
+            this.LinkLabel.Size = new System.Drawing.Size(98, 17);
+            this.LinkLabel.TabIndex = 7;
+            this.LinkLabel.Text = "A PRODUCT OF";
+            this.LinkLabel.Click += new System.EventHandler(this.LinkLabel_Click);
+            this.LinkLabel.MouseEnter += new System.EventHandler(this.LinkLabel_MouseEnter);
+            this.LinkLabel.MouseLeave += new System.EventHandler(this.LinkLabel_MouseLeave);
             // 
             // pictureBox2
             // 
@@ -1841,7 +1872,7 @@
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel11.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.materialLabel11.Location = new System.Drawing.Point(306, 334);
+            this.materialLabel11.Location = new System.Drawing.Point(290, 303);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(676, 41);
@@ -1868,34 +1899,18 @@
             this.imageList1.Images.SetKeyName(3, "Settings.png");
             this.imageList1.Images.SetKeyName(4, "About.png");
             // 
-            // LinkLabel
+            // VersionLabel
             // 
-            this.LinkLabel.AutoSize = true;
-            this.LinkLabel.Depth = 0;
-            this.LinkLabel.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.LinkLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.LinkLabel.Location = new System.Drawing.Point(1110, 498);
-            this.LinkLabel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.LinkLabel.Name = "LinkLabel";
-            this.LinkLabel.Size = new System.Drawing.Size(98, 17);
-            this.LinkLabel.TabIndex = 7;
-            this.LinkLabel.Text = "A PRODUCT OF";
-            this.LinkLabel.Click += new System.EventHandler(this.LinkLabel_Click);
-            this.LinkLabel.MouseEnter += new System.EventHandler(this.LinkLabel_MouseEnter);
-            this.LinkLabel.MouseLeave += new System.EventHandler(this.LinkLabel_MouseLeave);
-            // 
-            // materialLabel12
-            // 
-            this.materialLabel12.AutoSize = true;
-            this.materialLabel12.Depth = 0;
-            this.materialLabel12.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel12.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel12.Location = new System.Drawing.Point(15, 560);
-            this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel12.Name = "materialLabel12";
-            this.materialLabel12.Size = new System.Drawing.Size(356, 24);
-            this.materialLabel12.TabIndex = 8;
-            this.materialLabel12.Text = "DEVELOPED BY : ZUJAJ MISBAH KHAN";
+            this.VersionLabel.AutoSize = true;
+            this.VersionLabel.Depth = 0;
+            this.VersionLabel.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.VersionLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.VersionLabel.Location = new System.Drawing.Point(983, 333);
+            this.VersionLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.VersionLabel.Name = "VersionLabel";
+            this.VersionLabel.Size = new System.Drawing.Size(69, 24);
+            this.VersionLabel.TabIndex = 9;
+            this.VersionLabel.Text = "Version";
             // 
             // MainForm
             // 
@@ -2095,5 +2110,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private MaterialSkin.Controls.MaterialLabel LinkLabel;
         private MaterialSkin.Controls.MaterialLabel materialLabel12;
+        private MaterialSkin.Controls.MaterialLabel VersionLabel;
     }
 }

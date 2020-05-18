@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Telic Solutions Incorporation")]
 [assembly: AssemblyProduct("")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyCopyright("Copyright © 2020 Telic Solutions Incorporation")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
