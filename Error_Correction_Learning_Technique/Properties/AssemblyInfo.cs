@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ANNFL Assignment")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("ECLT-Error Correction Learning Technique")]
+[assembly: AssemblyDescription("A tool designed to help students and teachers visualize the Error Correction Learning Technique in action")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ANNFL Assignment")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyCompany("Telic Solutions Incorporation")]
+[assembly: AssemblyProduct("")]
+[assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

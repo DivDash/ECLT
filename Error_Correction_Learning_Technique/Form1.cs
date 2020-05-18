@@ -4,7 +4,7 @@ using System;
 using System.Windows.Forms;
 namespace Error_Correction_Learning_Technique
 {
-    public partial class Form1 : MetroForm
+    public partial class Form1 :MetroForm
     {
         private int[,] ANDPattern, ORPattern;
         private int[] ANDErrors, ANDdesiredY, ANDoutputY, ANDinputSample, ORErrors, ORdesiredY, ORoutputY, ORinputSample;
@@ -308,6 +308,7 @@ namespace Error_Correction_Learning_Technique
                 ANDiterationCount++;
                 Cursor = Cursors.WaitCursor;
                 varCount = 0;
+                
                 logBox.AppendText("Executing the AND neural network...\n" +
                 "\n--------------------------------------------------------------------" +
                 "-------------------------------------------------------------------------------------------------------------------------------" +

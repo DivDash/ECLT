@@ -30,6 +30,7 @@
         {
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.label36 = new System.Windows.Forms.Label();
             this.resetBtn = new MetroFramework.Controls.MetroButton();
             this.ANDexecuteBtn = new MetroFramework.Controls.MetroButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -79,6 +80,7 @@
             this.eetaTextBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.label37 = new System.Windows.Forms.Label();
             this.ORw2Label = new System.Windows.Forms.Label();
             this.ORw1Label = new System.Windows.Forms.Label();
             this.ORactivationLabel = new System.Windows.Forms.Label();
@@ -128,8 +130,6 @@
             this.OReetaLabel = new System.Windows.Forms.Label();
             this.ORbiasLabel = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -151,7 +151,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Location = new System.Drawing.Point(4, 25);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(1345, 679);
             this.metroTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.metroTabControl1.TabIndex = 37;
@@ -185,6 +185,17 @@
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
+            // 
+            // label36
+            // 
+            this.label36.BackColor = System.Drawing.Color.White;
+            this.label36.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(424, 8);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(292, 26);
+            this.label36.TabIndex = 45;
+            this.label36.Text = "Developed by Zujaj Misbah Khan";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // resetBtn
             // 
@@ -736,6 +747,17 @@
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
             // 
+            // label37
+            // 
+            this.label37.BackColor = System.Drawing.Color.White;
+            this.label37.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(424, 8);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(292, 26);
+            this.label37.TabIndex = 54;
+            this.label37.Text = "Developed by Zujaj Misbah Khan";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ORw2Label
             // 
             this.ORw2Label.BackColor = System.Drawing.Color.Transparent;
@@ -1266,28 +1288,6 @@
             this.pictureBox5.TabIndex = 43;
             this.pictureBox5.TabStop = false;
             // 
-            // label36
-            // 
-            this.label36.BackColor = System.Drawing.Color.White;
-            this.label36.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(424, 8);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(292, 26);
-            this.label36.TabIndex = 45;
-            this.label36.Text = "Developed by Zujaj Misbah Khan";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label37
-            // 
-            this.label37.BackColor = System.Drawing.Color.White;
-            this.label37.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(424, 8);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(292, 26);
-            this.label37.TabIndex = 54;
-            this.label37.Text = "Developed by Zujaj Misbah Khan";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1296,8 +1296,6 @@
             this.Controls.Add(this.metroTabControl1);
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Resizable = false;
-            this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);

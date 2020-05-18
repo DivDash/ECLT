@@ -48,6 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialSkin, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.2.1.2\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
@@ -76,10 +79,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -129,6 +141,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ORGate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Legend - White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NeuralNetworkWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NeuronActivity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NeuronActivityWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MSE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MSE-White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WeightAdjustment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WeightAdjustmentWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WeightUpdater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WeightUpdaterWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HardLimit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HardLimitWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ECLTIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TS.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
