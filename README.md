@@ -1,8 +1,7 @@
-# ECLT:ERROR CORRECTION LEARNING TECHNIQUE
+# ECLT
 
 <div align="center">
 <img src="https://github.com/telic-solutions/ECLT/blob/master/Screenshots/ECLT-Icon.png" >
-<p>ERROR CORRECTION LEARNING TECHNIQUE</p>
 </div>
 
 
