@@ -1,6 +1,9 @@
 # ECLT:ERROR CORRECTION LEARNING TECHNIQUE
 
-![](Screenshots/ECLT-Icon.png)
+<div align="center">
+<img src=Screenshots/ECLT-Icon.png" >
+<p>ERROR CORRECTION LEARNING TECHNIQUE</p>
+</div>
 
 
 
