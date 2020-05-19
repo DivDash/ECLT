@@ -25,7 +25,7 @@ ECLT is an exclusive C# code written to visualize the Error Correction Learning 
 ## UI FEATURES
 
 ### Material Designing 
-![](Screenshots/Stylish Menu.gif)
+![](Screenshots/StylishMenu.gif)
 
 ### Color Change 
 ![](Screenshots/ChangeColor.gif)
