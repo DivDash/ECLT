@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.HomeTab = new System.Windows.Forms.TabPage();
             this.materialCard6 = new MaterialSkin.Controls.MaterialCard();
             this.WeightUpdaterPicture = new System.Windows.Forms.PictureBox();
             this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
@@ -52,7 +52,7 @@
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.NeuronActivityPicture = new System.Windows.Forms.PictureBox();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.ANDTab = new System.Windows.Forms.TabPage();
             this.ANDw2Label = new MaterialSkin.Controls.MaterialLabel();
             this.ANDw1Label = new MaterialSkin.Controls.MaterialLabel();
             this.activationLabel = new MaterialSkin.Controls.MaterialLabel();
@@ -100,7 +100,7 @@
             this.t1Box = new System.Windows.Forms.TextBox();
             this.ANDLegendPicture = new System.Windows.Forms.PictureBox();
             this.ANDNeuralNetworkPicture = new System.Windows.Forms.PictureBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.ORTab = new System.Windows.Forms.TabPage();
             this.ORResetButton = new MaterialSkin.Controls.MaterialButton();
             this.ORExecuteButton = new MaterialSkin.Controls.MaterialButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -149,14 +149,15 @@
             this.ORLogBox = new MaterialSkin.Controls.MaterialMultiLineTextBox();
             this.ORLegendPicture = new System.Windows.Forms.PictureBox();
             this.ORNeuralNetworkPicture = new System.Windows.Forms.PictureBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.SettingsTab = new System.Windows.Forms.TabPage();
             this.IconHider = new MaterialSkin.Controls.MaterialSwitch();
             this.BackgroundAccent = new MaterialSkin.Controls.MaterialSwitch();
             this.HighlightAccent = new MaterialSkin.Controls.MaterialSwitch();
             this.ThemeChangerButton = new MaterialSkin.Controls.MaterialButton();
             this.UseColor = new MaterialSkin.Controls.MaterialSwitch();
             this.ChangeColorButton = new MaterialSkin.Controls.MaterialButton();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.AboutTab = new System.Windows.Forms.TabPage();
+            this.VersionLabel = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
             this.LinkLabel = new MaterialSkin.Controls.MaterialLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -166,9 +167,8 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
-            this.VersionLabel = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabControl1.SuspendLayout();
-            this.tabPage4.SuspendLayout();
+            this.HomeTab.SuspendLayout();
             this.materialCard6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WeightUpdaterPicture)).BeginInit();
             this.materialCard5.SuspendLayout();
@@ -180,29 +180,29 @@
             this.materialCard2.SuspendLayout();
             this.materialCard1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NeuronActivityPicture)).BeginInit();
-            this.tabPage1.SuspendLayout();
+            this.ANDTab.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ANDLegendPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ANDNeuralNetworkPicture)).BeginInit();
-            this.tabPage2.SuspendLayout();
+            this.ORTab.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ORLegendPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ORNeuralNetworkPicture)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            this.tabPage5.SuspendLayout();
+            this.SettingsTab.SuspendLayout();
+            this.AboutTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
             // 
-            this.materialTabControl1.Controls.Add(this.tabPage4);
-            this.materialTabControl1.Controls.Add(this.tabPage1);
-            this.materialTabControl1.Controls.Add(this.tabPage2);
-            this.materialTabControl1.Controls.Add(this.tabPage3);
-            this.materialTabControl1.Controls.Add(this.tabPage5);
+            this.materialTabControl1.Controls.Add(this.HomeTab);
+            this.materialTabControl1.Controls.Add(this.ANDTab);
+            this.materialTabControl1.Controls.Add(this.ORTab);
+            this.materialTabControl1.Controls.Add(this.SettingsTab);
+            this.materialTabControl1.Controls.Add(this.AboutTab);
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialTabControl1.ImageList = this.imageList1;
@@ -216,25 +216,25 @@
             this.materialTabControl1.Tag = "4";
             this.materialTabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.materialTabControl1_Selected);
             // 
-            // tabPage4
+            // HomeTab
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.White;
-            this.tabPage4.Controls.Add(this.materialCard6);
-            this.tabPage4.Controls.Add(this.materialCard5);
-            this.tabPage4.Controls.Add(this.materialCard4);
-            this.tabPage4.Controls.Add(this.materialCard3);
-            this.tabPage4.Controls.Add(this.materialCard2);
-            this.tabPage4.Controls.Add(this.materialLabel2);
-            this.tabPage4.Controls.Add(this.materialLabel1);
-            this.tabPage4.Controls.Add(this.materialCard1);
-            this.tabPage4.ImageKey = "Home.png";
-            this.tabPage4.Location = new System.Drawing.Point(4, 33);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1341, 610);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Tag = "0";
-            this.tabPage4.Text = "HOME";
+            this.HomeTab.BackColor = System.Drawing.Color.White;
+            this.HomeTab.Controls.Add(this.materialCard6);
+            this.HomeTab.Controls.Add(this.materialCard5);
+            this.HomeTab.Controls.Add(this.materialCard4);
+            this.HomeTab.Controls.Add(this.materialCard3);
+            this.HomeTab.Controls.Add(this.materialCard2);
+            this.HomeTab.Controls.Add(this.materialLabel2);
+            this.HomeTab.Controls.Add(this.materialLabel1);
+            this.HomeTab.Controls.Add(this.materialCard1);
+            this.HomeTab.ImageKey = "Home.png";
+            this.HomeTab.Location = new System.Drawing.Point(4, 33);
+            this.HomeTab.Name = "HomeTab";
+            this.HomeTab.Padding = new System.Windows.Forms.Padding(3);
+            this.HomeTab.Size = new System.Drawing.Size(1341, 610);
+            this.HomeTab.TabIndex = 3;
+            this.HomeTab.Tag = "0";
+            this.HomeTab.Text = "HOME";
             // 
             // materialCard6
             // 
@@ -493,29 +493,29 @@
             this.materialLabel3.TabIndex = 3;
             this.materialLabel3.Text = "NEURON ACTIVITY";
             // 
-            // tabPage1
+            // ANDTab
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.ANDw2Label);
-            this.tabPage1.Controls.Add(this.ANDw1Label);
-            this.tabPage1.Controls.Add(this.activationLabel);
-            this.tabPage1.Controls.Add(this.ANDBiasLabel);
-            this.tabPage1.Controls.Add(this.eetaLabel);
-            this.tabPage1.Controls.Add(this.ANDResetButton);
-            this.tabPage1.Controls.Add(this.ANDExecuteButton);
-            this.tabPage1.Controls.Add(this.ANDLogBox);
-            this.tabPage1.Controls.Add(this.groupBox2);
-            this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Controls.Add(this.ANDLegendPicture);
-            this.tabPage1.Controls.Add(this.ANDNeuralNetworkPicture);
-            this.tabPage1.ImageKey = "ANDGateIcon.png";
-            this.tabPage1.Location = new System.Drawing.Point(4, 33);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1341, 610);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Tag = "1";
-            this.tabPage1.Text = "AND GATE";
+            this.ANDTab.BackColor = System.Drawing.Color.White;
+            this.ANDTab.Controls.Add(this.ANDw2Label);
+            this.ANDTab.Controls.Add(this.ANDw1Label);
+            this.ANDTab.Controls.Add(this.activationLabel);
+            this.ANDTab.Controls.Add(this.ANDBiasLabel);
+            this.ANDTab.Controls.Add(this.eetaLabel);
+            this.ANDTab.Controls.Add(this.ANDResetButton);
+            this.ANDTab.Controls.Add(this.ANDExecuteButton);
+            this.ANDTab.Controls.Add(this.ANDLogBox);
+            this.ANDTab.Controls.Add(this.groupBox2);
+            this.ANDTab.Controls.Add(this.groupBox1);
+            this.ANDTab.Controls.Add(this.ANDLegendPicture);
+            this.ANDTab.Controls.Add(this.ANDNeuralNetworkPicture);
+            this.ANDTab.ImageKey = "ANDGateIcon.png";
+            this.ANDTab.Location = new System.Drawing.Point(4, 33);
+            this.ANDTab.Name = "ANDTab";
+            this.ANDTab.Padding = new System.Windows.Forms.Padding(3);
+            this.ANDTab.Size = new System.Drawing.Size(1341, 610);
+            this.ANDTab.TabIndex = 0;
+            this.ANDTab.Tag = "1";
+            this.ANDTab.Text = "AND GATE";
             // 
             // ANDw2Label
             // 
@@ -1072,29 +1072,29 @@
             this.ANDNeuralNetworkPicture.TabStop = false;
             this.ANDNeuralNetworkPicture.Tag = "1";
             // 
-            // tabPage2
+            // ORTab
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.ORResetButton);
-            this.tabPage2.Controls.Add(this.ORExecuteButton);
-            this.tabPage2.Controls.Add(this.groupBox3);
-            this.tabPage2.Controls.Add(this.groupBox4);
-            this.tabPage2.Controls.Add(this.ORw2Label);
-            this.tabPage2.Controls.Add(this.ORw1Label);
-            this.tabPage2.Controls.Add(this.ORactivationLabel);
-            this.tabPage2.Controls.Add(this.ORBiasLabel);
-            this.tabPage2.Controls.Add(this.OReetaLabel);
-            this.tabPage2.Controls.Add(this.ORLogBox);
-            this.tabPage2.Controls.Add(this.ORLegendPicture);
-            this.tabPage2.Controls.Add(this.ORNeuralNetworkPicture);
-            this.tabPage2.ImageKey = "ORGateIcon.png";
-            this.tabPage2.Location = new System.Drawing.Point(4, 33);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1341, 610);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Tag = "2";
-            this.tabPage2.Text = "OR GATE";
+            this.ORTab.BackColor = System.Drawing.Color.White;
+            this.ORTab.Controls.Add(this.ORResetButton);
+            this.ORTab.Controls.Add(this.ORExecuteButton);
+            this.ORTab.Controls.Add(this.groupBox3);
+            this.ORTab.Controls.Add(this.groupBox4);
+            this.ORTab.Controls.Add(this.ORw2Label);
+            this.ORTab.Controls.Add(this.ORw1Label);
+            this.ORTab.Controls.Add(this.ORactivationLabel);
+            this.ORTab.Controls.Add(this.ORBiasLabel);
+            this.ORTab.Controls.Add(this.OReetaLabel);
+            this.ORTab.Controls.Add(this.ORLogBox);
+            this.ORTab.Controls.Add(this.ORLegendPicture);
+            this.ORTab.Controls.Add(this.ORNeuralNetworkPicture);
+            this.ORTab.ImageKey = "ORGateIcon.png";
+            this.ORTab.Location = new System.Drawing.Point(4, 33);
+            this.ORTab.Name = "ORTab";
+            this.ORTab.Padding = new System.Windows.Forms.Padding(3);
+            this.ORTab.Size = new System.Drawing.Size(1341, 610);
+            this.ORTab.TabIndex = 1;
+            this.ORTab.Tag = "2";
+            this.ORTab.Text = "OR GATE";
             // 
             // ORResetButton
             // 
@@ -1662,23 +1662,23 @@
             this.ORNeuralNetworkPicture.TabIndex = 56;
             this.ORNeuralNetworkPicture.TabStop = false;
             // 
-            // tabPage3
+            // SettingsTab
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.White;
-            this.tabPage3.Controls.Add(this.IconHider);
-            this.tabPage3.Controls.Add(this.BackgroundAccent);
-            this.tabPage3.Controls.Add(this.HighlightAccent);
-            this.tabPage3.Controls.Add(this.ThemeChangerButton);
-            this.tabPage3.Controls.Add(this.UseColor);
-            this.tabPage3.Controls.Add(this.ChangeColorButton);
-            this.tabPage3.ImageKey = "Settings.png";
-            this.tabPage3.Location = new System.Drawing.Point(4, 33);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1341, 610);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Tag = "3";
-            this.tabPage3.Text = "SETTINGS";
+            this.SettingsTab.BackColor = System.Drawing.Color.White;
+            this.SettingsTab.Controls.Add(this.IconHider);
+            this.SettingsTab.Controls.Add(this.BackgroundAccent);
+            this.SettingsTab.Controls.Add(this.HighlightAccent);
+            this.SettingsTab.Controls.Add(this.ThemeChangerButton);
+            this.SettingsTab.Controls.Add(this.UseColor);
+            this.SettingsTab.Controls.Add(this.ChangeColorButton);
+            this.SettingsTab.ImageKey = "Settings.png";
+            this.SettingsTab.Location = new System.Drawing.Point(4, 33);
+            this.SettingsTab.Name = "SettingsTab";
+            this.SettingsTab.Padding = new System.Windows.Forms.Padding(3);
+            this.SettingsTab.Size = new System.Drawing.Size(1341, 610);
+            this.SettingsTab.TabIndex = 2;
+            this.SettingsTab.Tag = "3";
+            this.SettingsTab.Text = "SETTINGS";
             // 
             // IconHider
             // 
@@ -1796,23 +1796,37 @@
             this.ChangeColorButton.UseVisualStyleBackColor = false;
             this.ChangeColorButton.Click += new System.EventHandler(this.ChangeColorButton_Click);
             // 
-            // tabPage5
+            // AboutTab
             // 
-            this.tabPage5.BackColor = System.Drawing.Color.White;
-            this.tabPage5.Controls.Add(this.VersionLabel);
-            this.tabPage5.Controls.Add(this.materialLabel12);
-            this.tabPage5.Controls.Add(this.LinkLabel);
-            this.tabPage5.Controls.Add(this.pictureBox2);
-            this.tabPage5.Controls.Add(this.materialLabel7);
-            this.tabPage5.Controls.Add(this.materialLabel11);
-            this.tabPage5.Controls.Add(this.pictureBox1);
-            this.tabPage5.ImageKey = "About.png";
-            this.tabPage5.Location = new System.Drawing.Point(4, 33);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1341, 610);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "ABOUT";
+            this.AboutTab.BackColor = System.Drawing.Color.White;
+            this.AboutTab.Controls.Add(this.VersionLabel);
+            this.AboutTab.Controls.Add(this.materialLabel12);
+            this.AboutTab.Controls.Add(this.LinkLabel);
+            this.AboutTab.Controls.Add(this.pictureBox2);
+            this.AboutTab.Controls.Add(this.materialLabel7);
+            this.AboutTab.Controls.Add(this.materialLabel11);
+            this.AboutTab.Controls.Add(this.pictureBox1);
+            this.AboutTab.ImageKey = "About.png";
+            this.AboutTab.Location = new System.Drawing.Point(4, 33);
+            this.AboutTab.Name = "AboutTab";
+            this.AboutTab.Padding = new System.Windows.Forms.Padding(3);
+            this.AboutTab.Size = new System.Drawing.Size(1341, 610);
+            this.AboutTab.TabIndex = 4;
+            this.AboutTab.Tag = "4";
+            this.AboutTab.Text = "ABOUT";
+            // 
+            // VersionLabel
+            // 
+            this.VersionLabel.AutoSize = true;
+            this.VersionLabel.Depth = 0;
+            this.VersionLabel.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.VersionLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.VersionLabel.Location = new System.Drawing.Point(983, 333);
+            this.VersionLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.VersionLabel.Name = "VersionLabel";
+            this.VersionLabel.Size = new System.Drawing.Size(69, 24);
+            this.VersionLabel.TabIndex = 9;
+            this.VersionLabel.Text = "Version";
             // 
             // materialLabel12
             // 
@@ -1899,19 +1913,6 @@
             this.imageList1.Images.SetKeyName(3, "Settings.png");
             this.imageList1.Images.SetKeyName(4, "About.png");
             // 
-            // VersionLabel
-            // 
-            this.VersionLabel.AutoSize = true;
-            this.VersionLabel.Depth = 0;
-            this.VersionLabel.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.VersionLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.VersionLabel.Location = new System.Drawing.Point(983, 333);
-            this.VersionLabel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.VersionLabel.Name = "VersionLabel";
-            this.VersionLabel.Size = new System.Drawing.Size(69, 24);
-            this.VersionLabel.TabIndex = 9;
-            this.VersionLabel.Text = "Version";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1927,8 +1928,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.materialTabControl1.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
+            this.HomeTab.ResumeLayout(false);
+            this.HomeTab.PerformLayout();
             this.materialCard6.ResumeLayout(false);
             this.materialCard6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WeightUpdaterPicture)).EndInit();
@@ -1946,26 +1947,26 @@
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NeuronActivityPicture)).EndInit();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.ANDTab.ResumeLayout(false);
+            this.ANDTab.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ANDLegendPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ANDNeuralNetworkPicture)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.ORTab.ResumeLayout(false);
+            this.ORTab.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ORLegendPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ORNeuralNetworkPicture)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
+            this.SettingsTab.ResumeLayout(false);
+            this.SettingsTab.PerformLayout();
+            this.AboutTab.ResumeLayout(false);
+            this.AboutTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -1975,9 +1976,9 @@
         #endregion
 
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage ANDTab;
+        private System.Windows.Forms.TabPage ORTab;
+        private System.Windows.Forms.TabPage SettingsTab;
         private MaterialSkin.Controls.MaterialSwitch IconHider;
         private MaterialSkin.Controls.MaterialSwitch BackgroundAccent;
         private MaterialSkin.Controls.MaterialSwitch HighlightAccent;
@@ -2024,7 +2025,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox eetaTextBox;
         private MaterialSkin.Controls.MaterialMultiLineTextBox ANDLogBox;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage HomeTab;
         private MaterialSkin.Controls.MaterialButton ANDResetButton;
         private MaterialSkin.Controls.MaterialButton ANDExecuteButton;
         private System.Windows.Forms.ImageList imageList1;
@@ -2103,7 +2104,7 @@
         private System.Windows.Forms.PictureBox WeightUpdaterPicture;
         private MaterialSkin.Controls.MaterialLabel materialLabel10;
         private System.Windows.Forms.PictureBox HardLimitPicture;
-        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage AboutTab;
         private System.Windows.Forms.PictureBox pictureBox1;
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
         private MaterialSkin.Controls.MaterialLabel materialLabel11;

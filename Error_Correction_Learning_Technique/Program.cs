@@ -16,7 +16,7 @@ namespace Error_Correction_Learning_Technique
         [STAThread]
         static void Main()
         {
-            CheckForUpdates();
+           CheckForUpdates();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
@@ -27,13 +27,15 @@ namespace Error_Correction_Learning_Technique
         private static async Task CheckForUpdates()
         {
             var upgraded = false;
+            var mgr = UpdateManager.GitHubUpdateManager("https://github.com/telic-solutions/ECLT");
+
             while (!upgraded)
             {
                 await Task.Delay(TimeSpan.FromSeconds(5));
 
                 try
                 {
-                    using (var mgr = UpdateManager.GitHubUpdateManager("https://github.com/telic-solutions/ECLT"))
+                    using (var result = await mgr)
                     {
                         SquirrelAwareApp.HandleEvents(
                                         onInitialInstall: v => mgr.Result.CreateShortcutForThisExe(),
@@ -41,11 +43,13 @@ namespace Error_Correction_Learning_Technique
                                         onAppUninstall: v => mgr.Result.RemoveShortcutForThisExe(),
                                         onFirstRun: () => ShowTheWelcomeWizard = true);
 
-                        await mgr.Result.UpdateApp();
+                        await result.UpdateApp();
                         upgraded = true;
+                       
                         //ReleaseEntry release = await mgr.Result.UpdateApp();
                         // string x = $"PackageName : {release.PackageName}\nBaseURL {release.BaseUrl}\nFiles:{release.Filename}\nFileSize:{release.Filesize}\nVer:{release.Version}";
                     }
+                    mgr.Dispose();
                 }
                 catch (Exception ex)
                 {
