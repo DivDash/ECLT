@@ -2,7 +2,6 @@
 using MaterialSkin.Controls;
 using System;
 using System.Diagnostics;
-using System.Drawing;
 using System.Reflection;
 using System.Windows.Forms;
 
@@ -10,7 +9,6 @@ namespace Error_Correction_Learning_Technique
 {
     public partial class MainForm : MaterialForm
     {
-        private int colorSchemeIndex;
         private readonly MaterialSkinManager materialSkinManager;
         private int[,] ANDPattern, ORPattern;
         private int[] ANDErrors, ANDdesiredY, ANDoutputY, ANDinputSample, ORErrors, ORdesiredY, ORoutputY, ORinputSample;
@@ -31,20 +29,20 @@ namespace Error_Correction_Learning_Technique
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Indigo500, Primary.Indigo700, Primary.Indigo100, Accent.Pink200, TextShade.WHITE);
-
         }
 
         private void ChangeColorButton_Click(object sender, EventArgs e)
         {
-            colorSchemeIndex++;
-            if (colorSchemeIndex > 17)
-                colorSchemeIndex = 0;
-            UpdateColor();
+            Properties.Settings.Default.ColorSchemeIndex++;
+            if (Properties.Settings.Default.ColorSchemeIndex > 17)
+                Properties.Settings.Default.ColorSchemeIndex = 0;
+            LoadColors(Properties.Settings.Default.ColorSchemeIndex);
+            Properties.Settings.Default.Save();
         }
 
-        private void UpdateColor()
+        private void LoadColors(int value)
         {
-            switch (colorSchemeIndex)
+            switch (value)
             {
                 case 0:
                     materialSkinManager.ColorScheme = new ColorScheme(
@@ -234,7 +232,8 @@ namespace Error_Correction_Learning_Technique
                     break;
             }
 
-            UpdateColor();
+            LoadColors(Properties.Settings.Default.ColorSchemeIndex);
+            Properties.Settings.Default.Save();
         }
 
         private void UseColor_CheckedChanged(object sender, EventArgs e)
@@ -320,6 +319,8 @@ namespace Error_Correction_Learning_Technique
             Assembly assembly = Assembly.GetExecutingAssembly();
             FileVersionInfo fileVersionInfo = FileVersionInfo.GetVersionInfo(assembly.Location);
             VersionLabel.Text = "Version " + fileVersionInfo.FileVersion;
+
+            LoadColors(Properties.Settings.Default.ColorSchemeIndex);
         }
         private void ANDResetButton_Click(object sender, EventArgs e)
         {
