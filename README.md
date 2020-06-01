@@ -7,10 +7,6 @@
 
 ECLT is an exclusive C# code written to visualize the **Error Correction Learning Technique** that is amongst the basic node of the Neural Network learning process. It's a tool that help students & teachers to easily understand the flow by looking at it. Rather than making hand written calculations, lengthy operations can be iterated within seconds of time.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ## SCREENSHOT
 
 ### HOME	
