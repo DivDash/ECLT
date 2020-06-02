@@ -41,9 +41,11 @@ ECLT is an exclusive C# code written to visualize the **Error Correction Learnin
 
 ### Prerequisites
 
-* [.NetFramework 4.6.1](https://dotnet.microsoft.com/download/dotnet-framework/net461) 
-* [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/)
 
+| Tool      | Purpose |   Description   |
+|    :----:   |    :----:   |    :----:   |
+| [.NetFramework 4.6.1](https://dotnet.microsoft.com/download/dotnet-framework/net461)     |Framework required to run the app |Not mandatory for [Windows 10 November 2015 Update (all editions)](https://docs.microsoft.com/en-gb/archive/blogs/astebner/mailbag-what-version-of-the-net-framework-is-included-in-what-version-of-the-os) as it is already included in Operating System.  |
+|[Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/)| Coding |Microsoft's Integrated Development Environment | 
 
 ## Nuget Packages
 
