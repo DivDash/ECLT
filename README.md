@@ -39,7 +39,7 @@ ECLT is an exclusive C# code written to visualize the **Error Correction Learnin
 ### ORGATE EXECUTION  
 ![](Screenshots/ORGateExecution.gif)
 
-### Prerequisites
+## Prerequisites
 
 
 | Tool      | Purpose |   Description   |
