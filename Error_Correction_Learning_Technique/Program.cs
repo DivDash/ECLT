@@ -16,7 +16,7 @@ namespace Error_Correction_Learning_Technique
         [STAThread]
         static void Main()
         {
-           CheckForUpdates();
+            CheckForUpdates().Wait(2);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
@@ -35,7 +35,7 @@ namespace Error_Correction_Learning_Technique
 
                 try
                 {
-                    using (var result = await mgr)
+                    using (UpdateManager result = await mgr)
                     {
                         SquirrelAwareApp.HandleEvents(
                                         onInitialInstall: v => mgr.Result.CreateShortcutForThisExe(),
@@ -45,7 +45,7 @@ namespace Error_Correction_Learning_Technique
 
                         await result.UpdateApp();
                         upgraded = true;
-                       
+
                         //ReleaseEntry release = await mgr.Result.UpdateApp();
                         // string x = $"PackageName : {release.PackageName}\nBaseURL {release.BaseUrl}\nFiles:{release.Filename}\nFileSize:{release.Filesize}\nVer:{release.Version}";
                     }
